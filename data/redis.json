@@ -1,0 +1,250 @@
+{
+ "before": [
+  {
+   "cmd": "PING",
+   "status": "hang",
+   "seconds": 8.0,
+   "output": ""
+  },
+  {
+   "cmd": "INFO server",
+   "status": "hang",
+   "seconds": 8.0,
+   "output": ""
+  },
+  {
+   "cmd": "AUTH pw",
+   "status": "hang",
+   "seconds": 8.0,
+   "output": ""
+  },
+  {
+   "cmd": "KEYS *",
+   "status": "hang",
+   "seconds": 8.0,
+   "output": ""
+  },
+  {
+   "cmd": "FLUSHALL",
+   "status": "hang",
+   "seconds": 8.0,
+   "output": ""
+  },
+  {
+   "cmd": "SET x \"\u2026cron payload\u2026\"",
+   "status": "hang",
+   "seconds": 8.0,
+   "output": ""
+  },
+  {
+   "cmd": "CONFIG SET dir /tmp",
+   "status": "hang",
+   "seconds": 8.0,
+   "output": ""
+  },
+  {
+   "cmd": "CONFIG SET dbfilename root",
+   "status": "hang",
+   "seconds": 8.0,
+   "output": ""
+  },
+  {
+   "cmd": "SAVE",
+   "status": "hang",
+   "seconds": 8.0,
+   "output": ""
+  },
+  {
+   "cmd": "SLAVEOF 203.0.113.9 6379",
+   "status": "hang",
+   "seconds": 8.0,
+   "output": ""
+  }
+ ],
+ "hang_fix": [
+  {
+   "cmd": "PING",
+   "status": "ok",
+   "seconds": 0.01,
+   "output": "PONG"
+  },
+  {
+   "cmd": "INFO server",
+   "status": "ok",
+   "seconds": 0.01,
+   "output": "# Server"
+  },
+  {
+   "cmd": "AUTH pw",
+   "status": "ok",
+   "seconds": 0.01,
+   "output": "ERR Client sent AUTH, but no password is set"
+  },
+  {
+   "cmd": "KEYS *",
+   "status": "ok",
+   "seconds": 0.01,
+   "output": "ERR unknown command"
+  },
+  {
+   "cmd": "FLUSHALL",
+   "status": "ok",
+   "seconds": 0.01,
+   "output": "ERR unknown command"
+  },
+  {
+   "cmd": "SET x \"\u2026cron payload\u2026\"",
+   "status": "ok",
+   "seconds": 0.01,
+   "output": "ERR unknown command"
+  },
+  {
+   "cmd": "CONFIG SET dir /tmp",
+   "status": "ok",
+   "seconds": 0.0,
+   "output": "ERR unknown command"
+  },
+  {
+   "cmd": "CONFIG SET dbfilename root",
+   "status": "ok",
+   "seconds": 0.0,
+   "output": "ERR unknown command"
+  },
+  {
+   "cmd": "SAVE",
+   "status": "ok",
+   "seconds": 0.0,
+   "output": "ERR unknown command"
+  },
+  {
+   "cmd": "SLAVEOF 203.0.113.9 6379",
+   "status": "ok",
+   "seconds": 0.0,
+   "output": "ERR unknown command"
+  }
+ ],
+ "write_chain": [
+  {
+   "cmd": "PING",
+   "status": "ok",
+   "seconds": 0.0,
+   "output": "PONG"
+  },
+  {
+   "cmd": "INFO server",
+   "status": "ok",
+   "seconds": 0.0,
+   "output": "# Server"
+  },
+  {
+   "cmd": "AUTH pw",
+   "status": "ok",
+   "seconds": 0.0,
+   "output": "ERR AUTH <password> called without any password configured for the default user. Are you sure your configurati"
+  },
+  {
+   "cmd": "KEYS *",
+   "status": "ok",
+   "seconds": 0.0,
+   "output": ""
+  },
+  {
+   "cmd": "FLUSHALL",
+   "status": "ok",
+   "seconds": 0.0,
+   "output": "OK"
+  },
+  {
+   "cmd": "SET x \"\u2026cron payload\u2026\"",
+   "status": "ok",
+   "seconds": 0.0,
+   "output": "OK"
+  },
+  {
+   "cmd": "CONFIG SET dir /tmp",
+   "status": "ok",
+   "seconds": 0.0,
+   "output": "OK"
+  },
+  {
+   "cmd": "CONFIG SET dbfilename root",
+   "status": "ok",
+   "seconds": 0.0,
+   "output": "OK"
+  },
+  {
+   "cmd": "SAVE",
+   "status": "ok",
+   "seconds": 0.0,
+   "output": "OK"
+  },
+  {
+   "cmd": "SLAVEOF 203.0.113.9 6379",
+   "status": "ok",
+   "seconds": 0.0,
+   "output": "OK"
+  }
+ ],
+ "control": [
+  {
+   "cmd": "PING",
+   "status": "ok",
+   "seconds": 0.01,
+   "output": "PONG"
+  },
+  {
+   "cmd": "INFO server",
+   "status": "ok",
+   "seconds": 0.01,
+   "output": "# Server"
+  },
+  {
+   "cmd": "AUTH pw",
+   "status": "ok",
+   "seconds": 0.0,
+   "output": "ERR AUTH <password> called without any password configured for the default user. Are you sure your configurati"
+  },
+  {
+   "cmd": "KEYS *",
+   "status": "ok",
+   "seconds": 0.0,
+   "output": ""
+  },
+  {
+   "cmd": "FLUSHALL",
+   "status": "ok",
+   "seconds": 0.01,
+   "output": "OK"
+  },
+  {
+   "cmd": "SET x \"\u2026cron payload\u2026\"",
+   "status": "ok",
+   "seconds": 0.0,
+   "output": "OK"
+  },
+  {
+   "cmd": "CONFIG SET dir /tmp",
+   "status": "ok",
+   "seconds": 0.0,
+   "output": "ERR CONFIG SET failed (possibly related to argument 'dir') - can't set protected config"
+  },
+  {
+   "cmd": "CONFIG SET dbfilename root",
+   "status": "ok",
+   "seconds": 0.0,
+   "output": "ERR CONFIG SET failed (possibly related to argument 'dbfilename') - can't set protected config"
+  },
+  {
+   "cmd": "SAVE",
+   "status": "ok",
+   "seconds": 0.01,
+   "output": "OK"
+  },
+  {
+   "cmd": "SLAVEOF 203.0.113.9 6379",
+   "status": "ok",
+   "seconds": 0.0,
+   "output": "OK"
+  }
+ ]
+}

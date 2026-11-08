@@ -1,0 +1,19 @@
+PONG
+# Server
+redis_version:7.0.12
+os:Linux x86_64
+tcp_port:6379
+uptime_in_seconds:0
+uptime_in_days:0
+connected_clients:1
+
+OK
+OK
+ERR unknown command
+
+dir
+/data
+OK
+OK
+OK
+OK

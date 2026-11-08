@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+/* Colors and fonts from beelzebub.ai: near-black, violet, mint, Syne headings. */
+@theme {
+  --color-bg: #0e0c0c;
+  --color-panel: #14161b;
+  --color-line: rgba(216, 208, 255, 0.18);
+  --color-text: #f9fbff;
+  --color-soft: #d8d0ff;
+  --color-muted: #aeb0bd;
+  --color-accent: #b2a6f1;
+  --color-good: #8ef0c8;
+  --color-bad: #f87171;
+  --font-display: var(--font-syne), system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, monospace;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+a:focus-visible,
+[tabindex="0"]:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}

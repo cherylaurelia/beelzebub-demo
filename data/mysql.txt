@@ -1,0 +1,4 @@
+before:
+ERROR 2013 (HY000): Lost connection to MySQL server at 'reading initial communication packet', system error: 0
+after:
+ERROR 1045 (28000): Access denied

